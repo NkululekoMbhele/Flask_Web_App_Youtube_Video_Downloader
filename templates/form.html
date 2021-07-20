@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form - Page</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            background-color: burlywood;
+            height: 100vh;
+        }
+        
+        form {
+            margin: 2%;
+        }
+        
+        div {
+            margin: 2% 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Are you ready to kick ass Flask</h1>
+
+    <form action="/form-handler" method="POST">
+        <div>Name: <input type="text" name="name" /><br /></div>
+        <div>Gender: <input type="text" name="gender" /><br /></div>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+
+</html>

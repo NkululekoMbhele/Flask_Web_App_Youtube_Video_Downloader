@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/style.css" />
+    <title>Flask Training - {{title}}</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+            background-color: burlywood;
+            height: 100vh;
+        }
+        
+        .row {
+            margin-top: 3.5rem;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 120px;
+            margin: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Youtube Video Downloader</h1>
+            <form action="/form-handler" method="POST">
+                <label for="url">Enter the video link: </label>
+                <input type="text" id="url" name="url" />
+                <input type="submit" value="Download" />
+            </form>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
